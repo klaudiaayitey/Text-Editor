@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WriteSpace Text Editor</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="app">
+    <header>
+      <div class="logo">W</div>
+      <div>
+        <h1>WriteSpace</h1>
+        <p>Your simple text editor</p>
+      </div>
+    </header>
+
+    <main>
+      <div class="toolbar">
+        <button id="undoBtn" disabled>↶ Undo</button>
+        <button id="redoBtn" disabled>↷ Redo</button>
+        <span id="status">Ready to write</span>
+        <button id="clearBtn">Clear</button>
+      </div>
+
+      <input id="title" type="text" value="My Document"
+             aria-label="Document title">
+
+      <textarea id="editor"
+        placeholder="Start typing your thoughts here..."
+        spellcheck="true"></textarea>
+
+      <footer>
+        <span id="wordCount">0 words</span>
+        <span id="charCount">0 characters</span>
+        <span>WriteSpace Editor</span>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
